@@ -17,6 +17,7 @@ namespace demo_calculadora
             comboBox1.Items.Add("Euro");
             comboBox1.Items.Add("YEN");
             comboBox1.Items.Add("$AUS");
+            comboBox1.Items.Add("GBP");
 
             //
             //accedir a constants d'una altra classe

@@ -28,102 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtAmount = new System.Windows.Forms.TextBox();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.SuspendLayout();
+            txtAmount = new TextBox();
+            button2 = new Button();
+            button3 = new Button();
+            button1 = new Button();
+            button4 = new Button();
+            button5 = new Button();
+            comboBox1 = new ComboBox();
+            listBox1 = new ListBox();
+            label1 = new Label();
+            SuspendLayout();
             // 
             // txtAmount
             // 
-            this.txtAmount.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.txtAmount.Location = new System.Drawing.Point(111, 37);
-            this.txtAmount.Name = "txtAmount";
-            this.txtAmount.Size = new System.Drawing.Size(121, 36);
-            this.txtAmount.TabIndex = 0;
+            txtAmount.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            txtAmount.Location = new Point(111, 37);
+            txtAmount.Name = "txtAmount";
+            txtAmount.Size = new Size(121, 36);
+            txtAmount.TabIndex = 0;
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(99, 87);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(72, 56);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "2";
-            this.button2.UseVisualStyleBackColor = true;
+            button2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Location = new Point(99, 87);
+            button2.Name = "button2";
+            button2.Size = new Size(72, 56);
+            button2.TabIndex = 2;
+            button2.Text = "2";
+            button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(177, 87);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(72, 56);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "3";
-            this.button3.UseVisualStyleBackColor = true;
+            button3.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.Location = new Point(177, 87);
+            button3.Name = "button3";
+            button3.Size = new Size(72, 56);
+            button3.TabIndex = 3;
+            button3.Text = "3";
+            button3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(12, 87);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(72, 56);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = true;
+            button1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Location = new Point(12, 87);
+            button1.Name = "button1";
+            button1.Size = new Size(72, 56);
+            button1.TabIndex = 4;
+            button1.Text = "1";
+            button1.UseVisualStyleBackColor = true;
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(12, 165);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(72, 56);
-            this.button4.TabIndex = 5;
-            this.button4.Text = "4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.teclat_Click);
+            button4.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Location = new Point(12, 165);
+            button4.Name = "button4";
+            button4.Size = new Size(72, 56);
+            button4.TabIndex = 5;
+            button4.Text = "4";
+            button4.UseVisualStyleBackColor = true;
+            button4.Click += teclat_Click;
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(289, 175);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 6;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            button5.Location = new Point(289, 175);
+            button5.Name = "button5";
+            button5.Size = new Size(75, 23);
+            button5.TabIndex = 6;
+            button5.Text = "button5";
+            button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // comboBox1
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(287, 27);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(80, 23);
-            this.comboBox1.TabIndex = 7;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            this.comboBox1.TextChanged += new System.EventHandler(this.comboBox1_TextChanged);
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(287, 27);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(80, 23);
+            comboBox1.TabIndex = 7;
+            comboBox1.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
+            comboBox1.TextChanged += comboBox1_TextChanged;
+            // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.ItemHeight = 15;
+            listBox1.Location = new Point(187, 257);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(120, 94);
+            listBox1.TabIndex = 8;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.OrangeRed;
+            label1.Location = new Point(249, 58);
+            label1.Name = "label1";
+            label1.Size = new Size(43, 15);
+            label1.TabIndex = 9;
+            label1.Text = "ERROR";
+            label1.Visible = false;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(413, 381);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.txtAmount);
-            this.Name = "Form1";
-            this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(413, 381);
+            Controls.Add(label1);
+            Controls.Add(listBox1);
+            Controls.Add(comboBox1);
+            Controls.Add(button5);
+            Controls.Add(button4);
+            Controls.Add(button1);
+            Controls.Add(button3);
+            Controls.Add(button2);
+            Controls.Add(txtAmount);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -135,5 +158,7 @@
         private Button button4;
         private Button button5;
         private ComboBox comboBox1;
+        private ListBox listBox1;
+        private Label label1;
     }
 }
