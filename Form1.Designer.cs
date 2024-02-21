@@ -37,11 +37,12 @@
             comboBox1 = new ComboBox();
             listBox1 = new ListBox();
             label1 = new Label();
+            button6 = new Button();
             SuspendLayout();
             // 
             // txtAmount
             // 
-            txtAmount.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            txtAmount.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             txtAmount.Location = new Point(111, 37);
             txtAmount.Name = "txtAmount";
             txtAmount.Size = new Size(121, 36);
@@ -49,7 +50,7 @@
             // 
             // button2
             // 
-            button2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            button2.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             button2.Location = new Point(99, 87);
             button2.Name = "button2";
             button2.Size = new Size(72, 56);
@@ -59,7 +60,7 @@
             // 
             // button3
             // 
-            button3.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            button3.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             button3.Location = new Point(177, 87);
             button3.Name = "button3";
             button3.Size = new Size(72, 56);
@@ -69,7 +70,7 @@
             // 
             // button1
             // 
-            button1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            button1.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             button1.Location = new Point(12, 87);
             button1.Name = "button1";
             button1.Size = new Size(72, 56);
@@ -79,7 +80,7 @@
             // 
             // button4
             // 
-            button4.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
+            button4.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             button4.Location = new Point(12, 165);
             button4.Name = "button4";
             button4.Size = new Size(72, 56);
@@ -90,7 +91,7 @@
             // 
             // button5
             // 
-            button5.Location = new Point(289, 175);
+            button5.Location = new Point(287, 120);
             button5.Name = "button5";
             button5.Size = new Size(75, 23);
             button5.TabIndex = 6;
@@ -101,7 +102,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(287, 27);
+            comboBox1.Location = new Point(197, 198);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(80, 23);
             comboBox1.TabIndex = 7;
@@ -128,11 +129,22 @@
             label1.Text = "ERROR";
             label1.Visible = false;
             // 
+            // button6
+            // 
+            button6.Location = new Point(41, 273);
+            button6.Name = "button6";
+            button6.Size = new Size(75, 23);
+            button6.TabIndex = 10;
+            button6.Text = "Convert";
+            button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(413, 381);
+            Controls.Add(button6);
             Controls.Add(label1);
             Controls.Add(listBox1);
             Controls.Add(comboBox1);
@@ -160,5 +172,6 @@
         private ComboBox comboBox1;
         private ListBox listBox1;
         private Label label1;
+        private Button button6;
     }
 }

@@ -71,5 +71,11 @@ namespace demo_calculadora
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            string selectedItem1 = comboBox1.Items[comboBox1.SelectedIndex].ToString();
+            MessageBox.Show(selectedItem1);
+        }
     }
 }
