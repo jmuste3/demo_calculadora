@@ -75,7 +75,8 @@ namespace demo_calculadora
         private void button6_Click(object sender, EventArgs e)
         {
             string selectedItem1 = comboBox1.Items[comboBox1.SelectedIndex].ToString();
-            MessageBox.Show(selectedItem1);
+            MessageBox.Show("Has seleccionat: " + selectedItem1 + ", que és l'item #"+ comboBox1.SelectedIndex.ToString());
+            //double numero=Convert.ToDouble("123.5")
         }
     }
 }
