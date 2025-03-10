@@ -38,6 +38,7 @@
             listBox1 = new ListBox();
             label1 = new Label();
             button6 = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // txtAmount
@@ -102,7 +103,7 @@
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(197, 198);
+            comboBox1.Location = new Point(201, 198);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(80, 23);
             comboBox1.TabIndex = 7;
@@ -131,7 +132,7 @@
             // 
             // button6
             // 
-            button6.Location = new Point(41, 273);
+            button6.Location = new Point(300, 198);
             button6.Name = "button6";
             button6.Size = new Size(75, 23);
             button6.TabIndex = 10;
@@ -139,11 +140,23 @@
             button6.UseVisualStyleBackColor = true;
             button6.Click += button6_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.ForeColor = Color.DimGray;
+            label2.Location = new Point(192, 180);
+            label2.Name = "label2";
+            label2.Size = new Size(98, 15);
+            label2.TabIndex = 11;
+            label2.Text = "selecciona divisa:";
+            label2.Visible = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(413, 381);
+            Controls.Add(label2);
             Controls.Add(button6);
             Controls.Add(label1);
             Controls.Add(listBox1);
@@ -173,5 +186,6 @@
         private ListBox listBox1;
         private Label label1;
         private Button button6;
+        private Label label2;
     }
 }
