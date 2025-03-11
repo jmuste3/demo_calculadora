@@ -39,6 +39,7 @@
             label1 = new Label();
             button6 = new Button();
             label2 = new Label();
+            button7 = new Button();
             SuspendLayout();
             // 
             // txtAmount
@@ -76,8 +77,9 @@
             button1.Name = "button1";
             button1.Size = new Size(72, 56);
             button1.TabIndex = 4;
-            button1.Text = "1";
+            button1.Text = "9";
             button1.UseVisualStyleBackColor = true;
+            //button1.Click += button1_Click;
             // 
             // button4
             // 
@@ -151,11 +153,22 @@
             label2.Text = "selecciona divisa:";
             label2.Visible = false;
             // 
+            // button7
+            // 
+            button7.Location = new Point(43, 275);
+            button7.Name = "button7";
+            button7.Size = new Size(75, 23);
+            button7.TabIndex = 12;
+            button7.Text = "button7";
+            button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(413, 381);
+            Controls.Add(button7);
             Controls.Add(label2);
             Controls.Add(button6);
             Controls.Add(label1);
@@ -187,5 +200,6 @@
         private Label label1;
         private Button button6;
         private Label label2;
+        private Button button7;
     }
 }
