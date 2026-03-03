@@ -40,6 +40,7 @@
             button6 = new Button();
             label2 = new Label();
             button7 = new Button();
+            button8 = new Button();
             SuspendLayout();
             // 
             // txtAmount
@@ -59,6 +60,7 @@
             button2.TabIndex = 2;
             button2.Text = "2";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += teclat_Click;
             // 
             // button3
             // 
@@ -79,7 +81,6 @@
             button1.TabIndex = 4;
             button1.Text = "9";
             button1.UseVisualStyleBackColor = true;
-            //button1.Click += button1_Click;
             // 
             // button4
             // 
@@ -163,11 +164,23 @@
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
+            // button8
+            // 
+            button8.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
+            button8.Location = new Point(111, 198);
+            button8.Name = "button8";
+            button8.Size = new Size(72, 56);
+            button8.TabIndex = 13;
+            button8.Text = "2";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(413, 381);
+            Controls.Add(button8);
             Controls.Add(button7);
             Controls.Add(label2);
             Controls.Add(button6);
@@ -201,5 +214,6 @@
         private Button button6;
         private Label label2;
         private Button button7;
+        private Button button8;
     }
 }
